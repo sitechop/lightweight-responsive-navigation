@@ -1,0 +1,147 @@
+/* ////////////////////////////////// */
+/* ///// Page Styles */
+/* ////////////////////////////////// */
+html,body,h1,ul,li,div,a,p,button {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font:normal 100%/165% arial, helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article {
+  margin-top: 2.5em;
+}
+
+article a {
+ color: #2980b9
+}
+p {
+  color: #747474;
+}
+p+p {
+  margin-top: 1.5em;
+}
+
+h2 {
+  line-height: 1.35;
+}
+
+.width {
+  max-width: 996px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ////////////////////////////////// */
+/* // Responsive Navigation Styles */
+/* ////////////////////////////////// */
+header {
+  min-height: 3.75em;
+  background: #34495e;
+  background-repeat: repeat-x;
+  background-size:100% 3.75em;
+  background-image: -webkit-linear-gradient(top, #425f7c, #34495e); 
+  background-image:    -moz-linear-gradient(top, #425f7c, #34495e); 
+  background-image:     -ms-linear-gradient(top, #425f7c, #34495e); 
+  background-image:      -o-linear-gradient(top, #425f7c, #34495e); 
+  background-image:         linear-gradient(top, #425f7c, #34495e);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#425f7c', endColorstr='#34495e',GradientType=0 );
+}
+
+.topWidth {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+h1 {
+  position: absolute;
+  margin-left: 5%;
+  font-size: 1.5em;
+  line-height: 2.5;
+}
+
+h1 a {
+  color: white;
+}
+
+button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  line-height: 3.75;
+  margin-right: 5%;
+}
+
+nav {
+  padding-top: 3.75em;
+  text-align: center;
+  display: none;
+}
+
+nav ul {
+  border-top: 1px solid #293949;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  color: #d5dfe8;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #293949;
+}
+
+nav a:hover {
+  background-color: #293949;
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (min-width: 740px) {
+  .topWidth {
+    width: 90%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+  nav {
+    display: block;
+    padding: 0;
+    text-align: inherit;
+    float: right;
+    line-height: 3.75;
+  }
+  nav ul, nav a {
+    border: none;
+  }
+  nav a {
+    padding: 0;
+    margin-left: 2em;
+  }
+  nav a:hover {
+    background: none;
+  }
+  nav li {
+    display: inline-block;
+  }
+}
